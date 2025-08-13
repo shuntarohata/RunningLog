@@ -9,7 +9,7 @@ title: Home
 {% for project in site.pages %}
   {% if project.path contains 'projects/' %}
   <div class="card">
-    <a href="{{ project.url }}">
+    <a href="{{ site.baseurl }}{{ project.url }}">
       <h3>{{ project.title }}</h3>
       <p>{{ project.excerpt | default: "Click to read more" }}</p>
     </a>
