@@ -1,0 +1,6 @@
+title: My Blog
+description: A simple Cayman-based blog with 4-column cards
+baseurl: ""
+url: "https://USERNAME.github.io/RunningLog" # 自分のGitHub Pages URLに置き換え
+theme: cayman
+plugins: []

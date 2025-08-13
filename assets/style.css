@@ -1,0 +1,23 @@
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.grid-4 .card {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.grid-4 .card:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.grid-4 .card a {
+  text-decoration: none;
+  color: inherit;
+}
