@@ -2,4 +2,5 @@ title: Running Log
 description: Simple Cayman-based 4-column blog
 baseurl: "/RunningLog"
 url: "https://shuntarohata.github.io"
+theme: jekyll-theme-primer
 plugins: []
