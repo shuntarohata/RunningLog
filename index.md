@@ -5,6 +5,8 @@ title: Home
 
 # Projects
 
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
+
 <div class="grid-4">
 {% for project in site.pages %}
   {% if project.path contains 'projects/' %}
