@@ -1,2 +1,0 @@
-# RunningLog
-Log of running
