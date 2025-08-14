@@ -6,3 +6,4 @@
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a>',
     maxZoom: 18}).addTo(mymap);
+    mymap.fitWorld();
