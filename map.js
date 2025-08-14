@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   // 地図の初期化
-  var mymap = L.map('mapid').setView([0, 165], 1); // 日本中心
+  var mymap = L.map('mapid').setView([0, 0], 1); // ヨーロッパ中心
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a>',
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
             color: 'magenta',
             fillColor: 'magenta',
             fillOpacity: 0.8,
-            radius: 8
+            radius: 1
           });
         },
         onEachFeature: function(feature, layer) {
