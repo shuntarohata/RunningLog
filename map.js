@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }).addTo(mymap);
 
   // GeoJSONの読み込み（GitHub Pages上ではルートからの相対パスに注意）
-  fetch('files/ya_cities.geojson')  // ./ は不要
+  fetch('/RunningLog/files/ya_cities.geojson')  // ./ は不要
     .then(response => response.json())
     .then(data => {
       L.geoJSON(data, {
