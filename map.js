@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
             color: 'magenta',
             fillColor: 'magenta',
             fillOpacity: 0.8,
-            radius: 8
+            radius: 1
           });
         },
         onEachFeature: function(feature, layer) {
