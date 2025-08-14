@@ -1,6 +1,6 @@
 // 日本を中心に表示（Web Mercator投影）
   //地図の中心地を定義
-  var mymap = L.map('mapid').setView([0, 140], 1);
+  var mymap = L.map('mapid').setView([-20, 140], 1);
   //var mymap = L.map('mapid').setView([37.85, 138.8], 9);
   //タイルレイヤーを取得
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
