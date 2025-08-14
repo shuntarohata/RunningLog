@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 document.addEventListener("DOMContentLoaded", function () {
   // 日本を中心に表示（Web Mercator投影）
   var mymap = L.map('mapid').setView([0, 165], 1);
+=======
+document.addEventListener("DOMContentLoaded", function() {
+  // 地図の初期化
+  var mymap = L.map('mapid').setView([0, 165], 1); // 日本中心
+>>>>>>> parent of e2ed4f4 (small change)
 
   // タイルレイヤーを取得
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
