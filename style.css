@@ -13,9 +13,14 @@ body {
 }
 
 #mapid {
-  max-width: 800px;
+  display: block;            /* ブロック要素化 */
+  margin-left: auto;         /* 左余白自動 */
+  margin-right: auto;        /* 右余白自動 */
+  max-width: 90%;
+  width: 800px;
   height: 400px;
-  margin: 2rem auto;
+  margin-top: 2rem;          /* 上下の余白 */
+  margin-bottom: 2rem;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
