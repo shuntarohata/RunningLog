@@ -3,78 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>おしゃれブログ風サイト</title>
+  <title>ブログ風ページ with 世界地図</title>
+
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      background-color: #f5f5f5;
-    }
-    .content-box {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      padding: 2rem;
-      max-width: 800px; /* 最大幅（PC時） */
-      margin: auto;
-    }
-    .card img {
-      object-fit: cover;
-      height: 150px;
-    }
-  </style>
+
+  <!-- Leaflet & proj4leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.8.1/proj4.js"></script>
+  <script src="https://unpkg.com/proj4leaflet"></script>
+
+  <!-- 外部CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="container py-5">
-    <div class="content-box">
-      <h1 class="mb-4 text-center">ようこそ！</h1>
-      <p class="text-center text-muted">ここはブログ風ホームページのサンプルです。スマホからも見やすいレスポンシブデザインです。</p>
+  <!-- タイトル部分 -->
+  <div class="title-box mt-5 text-center">
+    <h1>ようこそ！</h1>
+    <p class="text-muted">日本中心のモルワイデ世界地図付きブログ</p>
+  </div>
 
-      <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col">
-          <div class="card h-100 text-center">
-            <img src="https://placehold.co/400x200" class="card-img-top" alt="画像1">
-            <div class="card-body">
-              <h5 class="card-title">記事タイトル1</h5>
-              <p class="card-text">記事の短い説明文。クリックで詳細ページへ。</p>
-              <a href="#" class="btn btn-primary">続きを読む</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 text-center">
-            <img src="https://placehold.co/400x200" class="card-img-top" alt="画像2">
-            <div class="card-body">
-              <h5 class="card-title">記事タイトル2</h5>
-              <p class="card-text">記事の短い説明文。クリックで詳細ページへ。</p>
-              <a href="#" class="btn btn-primary">続きを読む</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 text-center">
-            <img src="https://placehold.co/400x200" class="card-img-top" alt="画像3">
-            <div class="card-body">
-              <h5 class="card-title">記事タイトル3</h5>
-              <p class="card-text">記事の短い説明文。クリックで詳細ページへ。</p>
-              <a href="#" class="btn btn-primary">続きを読む</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 text-center">
-            <img src="https://placehold.co/400x200" class="card-img-top" alt="画像4">
-            <div class="card-body">
-              <h5 class="card-title">記事タイトル4</h5>
-              <p class="card-text">記事の短い説明文。クリックで詳細ページへ。</p>
-              <a href="#" class="btn btn-primary">続きを読む</a>
-            </div>
+  <!-- 世界地図 -->
+  <div id="map"></div>
+
+  <!-- 本文部分 -->
+  <div class="content-box">
+    <h2 class="mb-4">最新記事</h2>
+    <p>ここにブログの概要や記事リンクを入れます。</p>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="https://placehold.co/400x200" class="card-img-top" alt="画像1">
+          <div class="card-body">
+            <h5 class="card-title">記事タイトル1</h5>
+            <p class="card-text">記事の短い説明文。</p>
+            <a href="#" class="btn btn-primary">続きを読む</a>
           </div>
         </div>
       </div>
-
+      <!-- 他のカードも同様に追加 -->
     </div>
   </div>
 
+  <!-- 外部JS -->
+  <script src="map.js"></script>
 </body>
 </html>
