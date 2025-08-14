@@ -15,7 +15,7 @@
   <script src="https://unpkg.com/proj4leaflet"></script>
 
   <!-- 外部CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
 </head>
 <body>
   <!-- タイトル部分 -->
@@ -23,9 +23,6 @@
     <h1>出先で走る</h1>
     <p class="text-muted">出先で走った記録</p>
   </div>
-
-  <!-- 世界地図 -->
-  <div id="mapid"></div>
 
   <!-- メインコンテンツ -->
   <div class="content-box">
@@ -40,6 +37,7 @@
     </div>
   </footer>
 
-  <script src="map.js"></script>
+  <!-- 外部JS -->
+  <script src="{{ '/assets/map.js' | relative_url }}"></script>
 </body>
 </html>
