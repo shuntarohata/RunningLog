@@ -1,24 +1,7 @@
-// モルワイデ投影の定義（日本中心）
-var crs = new L.Proj.CRS(
-  'ESRI:54009',
-  '+proj=moll +lon_0=140 +datum=WGS84 +units=m +no_defs',
-  {
-    resolutions: [5000000, 2500000, 1250000, 625000, 312500, 156250, 78125],
-    origin: [0, 0]
-  }
-);
+// 日本を中心に表示（Web Mercator投影）
+var map = L.map('map').setView([35, 140], 2);
 
-// 地図作成
-var map = L.map('map', {
-  crs: crs,
-  center: [20, 140], // 日本中心
-  zoom: 1
-});
-
-// タイルレイヤ（モルワイデ対応）
-L.tileLayer.wms('https://ahocevar.com/geoserver/wms', {
-  layers: 'ne:NE1_HR_LC_SR_W_DR',
-  format: 'image/png',
-  transparent: false,
-  attribution: 'Tiles courtesy of Natural Earth'
+// OpenStreetMapタイルを読み込み
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
