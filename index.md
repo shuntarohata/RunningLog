@@ -2,7 +2,8 @@
 layout: single
 title: "Running Log"
 ---
-
+<!-- 世界地図 -->
+{% include map.html %}
 
 <!-- 最新記事カード -->
 <h2 class="mb-4">最新記事</h2>
