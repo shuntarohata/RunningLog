@@ -11,10 +11,14 @@ title: "Running Log"
   {% for post in site.posts %}
   <div class="col">
     <div class="card h-100 text-center">
+      {% if post.image %}
+      <img src="{{ post.image }}" class="card-img-top" alt="記事画像">
+      {% else %}
       <img src="https://placehold.co/400x200" class="card-img-top" alt="記事画像">
+      {% endif %}
       <div class="card-body">
         <h5 class="card-title">{{ post.title }}</h5>
-        <p class="card-text">{{ post.excerpt | strip_html | truncate: 100 }}</p>
+        <p class="card-text">{{ post.excerpt | markdownify }}</p>
         <a href="{{ post.url | relative_url }}" class="btn btn-primary">続きを読む</a>
       </div>
     </div>
