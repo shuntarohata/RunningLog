@@ -2,7 +2,8 @@ title: "出先で走る"
 description: "出先で走る、モチベアップのためのページ"
 
 # Minimal Mistakes を GitHub Pages で使う設定
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+remote_theme: fongandrew/hydeout
+
 
 plugins:
   - jekyll-include-cache
