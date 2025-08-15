@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-  // 地図の初期化
-  var mymap = L.map('mapid').setView([0, 20], 1); // 日本中心
+  // ここで以前指定していた座標をそのまま使用
+  var mymap = L.map('mapid').setView([0, 165], 1); 
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a>',
