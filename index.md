@@ -3,8 +3,6 @@ layout: single
 title: "Running Log"
 ---
 
-<!-- 世界地図 -->
-<div id="mapid" class="full-width-map"></div>
 
 <!-- 最新記事カード -->
 <h2 class="mb-4">最新記事</h2>
