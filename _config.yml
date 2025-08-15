@@ -1,3 +1,28 @@
-theme: jekyll-theme-primer
-title: シンプルサイト
-description: 最小構成のGitHub Pages
+title: "出先で走る"
+description: "出先で走る、モチベアップのためのページ"
+theme: minimal-mistakes-jekyll
+locale: ja
+url: "https://shuntarohata.github.io"
+baseurl: "/RunningLog" # リポジトリ名
+repository: "shuntarohata/RunningLog"
+
+# Minimal Mistakes 設定
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+author:
+  name: "Shuntaro Hata"
+
+# ナビゲーションメニュー
+navigation:
+  - title: "ホーム"
+    url: /
+  - title: "記事"
+    url: /posts/
+
+# MarkdownでHTML許可
+kramdown:
+  input: GFM
+  hard_wrap: false
+  parse_block_html: true
