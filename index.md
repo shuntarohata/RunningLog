@@ -2,7 +2,7 @@
 layout: single
 title: "Running Log"
 ---
-<!-- 世界地図 -->
+<!-- 世界地図を表示 -->
 {% include map.html %}
 
 <!-- 最新記事カード -->
@@ -14,7 +14,9 @@ title: "Running Log"
       <img src="https://placehold.co/400x200" class="card-img-top" alt="記事画像">
       <div class="card-body">
         <h5 class="card-title">{{ post.title }}</h5>
-        <p class="card-text">{{ post.excerpt | strip_html | truncate: 100 }}</p>
+        <p class="card-text">
+          {{ post.content | markdownify | strip_html | truncate: 100 }}
+        </p>
         <a href="{{ post.url | relative_url }}" class="btn btn-primary">続きを読む</a>
       </div>
     </div>
