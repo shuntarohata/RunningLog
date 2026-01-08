@@ -9,6 +9,7 @@ canonifyURLs = false
   pagerSize = 10
 
 [params]
+  mainSections = ["posts"]  # ← ここがポイント
   [params.homeInfoParams]
     Title = "出張先ランニングログ"
     Content = "海外出張中に走った記録"
