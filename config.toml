@@ -1,0 +1,14 @@
+baseURL = "/"
+title = "Running Log"
+theme = "PaperMod"
+languageCode = "ja"
+relativeURLs = true
+canonifyURLs = true
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  [params.homeInfoParams]
+    Title = "出張先ランニングログ"
+    Content = "海外出張中に走った記録"
