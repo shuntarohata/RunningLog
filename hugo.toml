@@ -1,3 +1,12 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://shuntarohata.github.io/RunningLog/"
+title = "Running Log"
+theme = "PaperMod"
+languageCode = "ja"
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  [params.homeInfoParams]
+    Title = "出張先ランニングログ"
+    Content = "海外出張中に走った記録"

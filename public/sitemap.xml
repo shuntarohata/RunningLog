@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:1313/RunningLog/posts/oslo-2024-09/</loc>
+    <lastmod>2026-01-08T13:15:30+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/RunningLog/posts/</loc>
+    <lastmod>2026-01-08T13:15:30+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/RunningLog/</loc>
+    <lastmod>2026-01-08T13:15:30+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/RunningLog/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/RunningLog/tags/</loc>
+  </url>
+</urlset>
