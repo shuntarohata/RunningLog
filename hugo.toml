@@ -1,10 +1,8 @@
 baseURL = "https://shuntarohata.github.io/RunningLog/"
-title = "Running Log"
+relativeURLs = false
+canonifyURLs = false
 theme = "PaperMod"
 languageCode = "ja"
-
-relativeURLs = true
-canonifyURLs = true
 
 [pagination]
   pagerSize = 10
