@@ -1,27 +1,35 @@
-name: Hugo Deploy
+name: Deploy Hugo site
 
 on:
   push:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v0.102.0
+        uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.154.3'
+          hugo-version: 'latest'
           extended: true
 
-      - name: Build site
+      - name: Build
         run: hugo --minify --config config_prod.toml
 
       - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v5
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
