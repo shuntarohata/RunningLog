@@ -3,6 +3,9 @@ title = "Running Log"
 theme = "PaperMod"
 languageCode = "ja"
 
+relativeURLs = true
+canonifyURLs = true
+
 [pagination]
   pagerSize = 10
 
